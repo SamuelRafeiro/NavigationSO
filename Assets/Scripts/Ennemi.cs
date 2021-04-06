@@ -4,7 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// Classe a ajouter sur les ennemis.
-/// Permet l'interaction (quand on clique sur un ennemi).
+/// Permet l'interaction (quand on clique sur un ennemi)
 /// </summary>
 public class Ennemi : MonoBehaviour
 {
@@ -24,6 +24,6 @@ public class Ennemi : MonoBehaviour
     /// </summary>
     void OnMouseDown()
     {
-        /*ici*/ //declenche la methode PerdreVie avec le Singleton de GestNiveau
+        GestNiveau.instance.PerdreVie();//declenche la methode PerdreVie avec le Singleton de GestNiveau
     }
 }
